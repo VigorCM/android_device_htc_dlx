@@ -29,6 +29,7 @@ $(call inherit-product, device/htc/msm8960-common/msm8960.mk)
 # Boot ramdisk setup
 PRODUCT_PACKAGES += \
     fstab.dlx \
+    init.qcom.firmware_links.sh \
     init.target.rc
 
 # recovery and custom charging
