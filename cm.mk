@@ -6,23 +6,23 @@ $(call inherit-product, vendor/cm/config/cdma.mk)
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/htc/jewel/jewel.mk)
+$(call inherit-product, device/htc/dlx/dlx.mk)
 
 # Device naming
-PRODUCT_DEVICE := jewel
-PRODUCT_NAME := cm_jewel
-PRODUCT_BRAND := htc
-PRODUCT_MODEL := EVO
+PRODUCT_DEVICE := dlx
+PRODUCT_NAME := cm_dlx
+PRODUCT_BRAND := verizon_wwe
+PRODUCT_MODEL := DLX
 PRODUCT_MANUFACTURER := HTC
 
 # Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_jewel BUILD_ID=JRO03C BUILD_FINGERPRINT="htc/jewel/jewel:4.1.1/JRO03C/147243.3:user/release-keys" PRIVATE_BUILD_DESC="3.16.651.3 CL147243 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_dlx BUILD_ID=JRO03C BUILD_FINGERPRINT="verizon_wwe/dlx/dlx:4.1.1/JRO03C/147796.2:user/release-keys" PRIVATE_BUILD_DESC="2.04.605.2 CL147796 release-keys"
 
 # Release name
-PRODUCT_RELEASE_NAME := jewel
+PRODUCT_RELEASE_NAME := dlx
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
 -include vendor/cm/config/common_versions.mk
