@@ -2,6 +2,6 @@
 
 set -e
 
-export DEVICE=jewel
+export DEVICE=dlx
 export VENDOR=htc
 ./../msm8960-common/extract-files.sh $@

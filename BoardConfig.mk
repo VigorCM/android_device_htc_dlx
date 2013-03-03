@@ -28,13 +28,13 @@
 -include device/htc/msm8960-common/BoardConfigCommon.mk
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := jewel
+TARGET_BOOTLOADER_BOARD_NAME := monarudo
 
 # Kernel
-TARGET_KERNEL_CONFIG := jet_defconfig
+TARGET_KERNEL_CONFIG := apq8064_defconfig
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/jewel/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/dlx/bluetooth
 
 # HTCLOG
 COMMON_GLOBAL_CFLAGS += -DHTCLOG
@@ -43,28 +43,6 @@ COMMON_GLOBAL_CFLAGS += -DHTCLOG
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_VOLD_MAX_PARTITIONS := 38
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
-
-#dev:        size     erasesize name
-#mmcblk0p23: 000ffa00 00000200 "misc"
-#mmcblk0p22: 00fffe00 00000200 "recovery"
-#mmcblk0p21: 01000000 00000200 "boot"
-#mmcblk0p35: 4dfffc00 00000200 "system"
-#mmcblk0p30: 00140200 00000200 "local"
-#mmcblk0p36: 0dfffe00 00000200 "cache"
-#mmcblk0p37: 89fffe00 00000200 "userdata"
-#mmcblk0p26: 01400000 00000200 "devlog"
-#mmcblk0p28: 00040000 00000200 "pdata"
-#mmcblk0p38: 27be00000 00000200 "fat"
-#mmcblk0p31: 00010000 00000200 "extra"
-#mmcblk0p17: 02d00000 00000200 "radio"
-#mmcblk0p18: 00a00000 00000200 "adsp"
-#mmcblk0p16: 00100000 00000200 "dsps"
-#mmcblk0p19: 00500000 00000200 "wcnss"
-#mmcblk0p20: 007ffa00 00000200 "radio_config"
-#mmcblk0p24: 00400000 00000200 "modem_st1"
-#mmcblk0p25: 00400000 00000200 "modem_st2"
-#mmcblk0p32: 00040000 00000200 "skylink"
-#mmcblk0p33: 00040000 00000200 "cdma_record"
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true

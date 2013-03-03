@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2012 The Android Open-Source Project
+# Copyright (C) 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,10 +11,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+#
+# Emulator keyboard configuration file #2.
 #
 
-LOCAL_PATH := $(call my-dir)
+touch.deviceType = touchScreen
+touch.orientationAware = 1
 
-ifeq ($(TARGET_DEVICE),dlx)
-    include $(call first-makefiles-under,$(LOCAL_PATH))
-endif
+keyboard.layout = qwerty
+keyboard.characterMap = qwerty2
+keyboard.orientationAware = 1
+keyboard.builtIn = 1
+
+cursor.mode = navigation
+cursor.orientationAware = 1
